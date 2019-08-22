@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155.5" id="KGk-i7-Jjw" customClass="Ti9TableViewCell" customModule="TableViewAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6i8-3w-5kr">
+                        <rect key="frame" x="12" y="12" width="150" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="VU8-8O-V52"/>
+                            <constraint firstAttribute="height" constant="100" id="nAW-63-f6l"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Victor Vescovo, Davied Blello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlz-eU-N8S">
+                        <rect key="frame" x="174" y="12" width="200" height="16.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's at the bottom of the ocean -- and how we're getting there" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nal-Gm-fcx">
+                        <rect key="frame" x="174" y="33.5" width="200" height="57.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                <constraints>
+                    <constraint firstItem="Nal-Gm-fcx" firstAttribute="top" secondItem="hlz-eU-N8S" secondAttribute="bottom" constant="5" id="0RB-1c-mOb"/>
+                    <constraint firstItem="hlz-eU-N8S" firstAttribute="leading" secondItem="6i8-3w-5kr" secondAttribute="trailing" constant="12" id="7yN-WK-0YW"/>
+                    <constraint firstAttribute="trailing" secondItem="hlz-eU-N8S" secondAttribute="trailing" constant="12" id="CeL-5O-xl9"/>
+                    <constraint firstItem="hlz-eU-N8S" firstAttribute="top" secondItem="6i8-3w-5kr" secondAttribute="top" id="Ddz-y3-Sua"/>
+                    <constraint firstItem="6i8-3w-5kr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="EjN-Hl-Acn"/>
+                    <constraint firstItem="Nal-Gm-fcx" firstAttribute="leading" secondItem="hlz-eU-N8S" secondAttribute="leading" id="Zbw-sL-QbP"/>
+                    <constraint firstItem="6i8-3w-5kr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="adt-mC-pBZ"/>
+                    <constraint firstAttribute="bottom" secondItem="6i8-3w-5kr" secondAttribute="bottom" constant="12" id="o3a-9Z-h5I"/>
+                    <constraint firstItem="Nal-Gm-fcx" firstAttribute="trailing" secondItem="hlz-eU-N8S" secondAttribute="trailing" id="wJG-nb-7vJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ivLogo" destination="6i8-3w-5kr" id="MnQ-ZW-q1p"/>
+                <outlet property="lblSays" destination="Nal-Gm-fcx" id="Tww-RV-oVn"/>
+                <outlet property="lblTitle" destination="hlz-eU-N8S" id="6Pt-dy-qi2"/>
+            </connections>
+            <point key="canvasLocation" x="30.434782608695656" y="85.379464285714278"/>
+        </tableViewCell>
+    </objects>
+</document>
